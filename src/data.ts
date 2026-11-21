@@ -1,0 +1,30 @@
+export type Problem = { id:string; topic:string; topicColor:string; title:string; prompt:string; answer:string; difficulty:'Easy'|'Medium'|'Challenge'; explanation:string; choices?:string[] };
+export const topics = [
+ {name:'Number sense',color:'pink',icon:'🔢',desc:'Numbers, place value & estimation'},
+ {name:'Operations',color:'yellow',icon:'➕',desc:'Add, subtract, multiply & divide'},
+ {name:'Fractions',color:'purple',icon:'🍰',desc:'Understand parts of a whole'},
+ {name:'Decimals',color:'blue',icon:'💧',desc:'Place value beyond the decimal'},
+ {name:'Percentages',color:'green',icon:'💯',desc:'Percents in everyday life'},
+ {name:'Ratios',color:'peach',icon:'⚖️',desc:'Compare quantities & rates'},
+ {name:'Integers',color:'blue',icon:'↕️',desc:'Positive & negative numbers'},
+ {name:'Intro to algebra',color:'purple',icon:'🔤',desc:'Variables & simple equations'},
+];
+export const problems:Problem[] = [
+ {id:'n1',topic:'Number sense',topicColor:'pink',title:'Place value',prompt:'In the number 4,582, what is the value of the digit 5?',answer:'500',difficulty:'Easy',explanation:'The 5 is in the hundreds place, so it represents 500.'},
+ {id:'n2',topic:'Number sense',topicColor:'pink',title:'Number comparison',prompt:'Which number is greater: 0.7 or 0.65?',answer:'0.7',difficulty:'Easy',explanation:'Write 0.7 as 0.70. Since 70 hundredths is greater than 65 hundredths, 0.70 is larger.'},
+ {id:'o1',topic:'Operations',topicColor:'yellow',title:'Order of operations',prompt:'Evaluate: 6 + 3 × 4',answer:'18',difficulty:'Easy',explanation:'Multiplication comes before addition: 3 × 4 = 12, then 6 + 12 = 18.'},
+ {id:'o2',topic:'Operations',topicColor:'yellow',title:'Multi-step arithmetic',prompt:'A pack has 8 pencils. How many pencils are in 7 packs?',answer:'56',difficulty:'Easy',explanation:'7 groups of 8 means 7 × 8 = 56 pencils.'},
+ {id:'f1',topic:'Fractions',topicColor:'purple',title:'Adding fractions',prompt:'What is 1/2 + 1/3? Give your answer as a simplified fraction.',answer:'5/6',difficulty:'Medium',explanation:'Convert to sixths: 1/2 = 3/6 and 1/3 = 2/6. Add to get 5/6.'},
+ {id:'f2',topic:'Fractions',topicColor:'purple',title:'Equivalent fractions',prompt:'Fill in the blank: 3/4 = ?/8',answer:'6',difficulty:'Easy',explanation:'Multiply both numerator and denominator by 2, so 3/4 = 6/8.'},
+ {id:'f3',topic:'Fractions',topicColor:'purple',title:'Fraction multiplication',prompt:'Multiply and simplify: 2/3 × 3/5',answer:'2/5',difficulty:'Medium',explanation:'Multiply numerators and denominators: 6/15, then simplify to 2/5.'},
+ {id:'d1',topic:'Decimals',topicColor:'blue',title:'Decimal addition',prompt:'Calculate: 2.35 + 1.8',answer:'4.15',difficulty:'Easy',explanation:'Line up decimal places: 2.35 + 1.80 = 4.15.'},
+ {id:'d2',topic:'Decimals',topicColor:'blue',title:'Decimal multiplication',prompt:'Calculate: 0.4 × 0.3',answer:'0.12',difficulty:'Medium',explanation:'4 × 3 = 12. There are two decimal places total, so the result is 0.12.'},
+ {id:'p1',topic:'Percentages',topicColor:'green',title:'Finding a percent',prompt:'What is 25% of 80?',answer:'20',difficulty:'Easy',explanation:'25% is one quarter. 80 ÷ 4 = 20.'},
+ {id:'p2',topic:'Percentages',topicColor:'green',title:'Discount',prompt:'A $60 item is 10% off. What is the discount amount (not the final price)?',answer:'6',difficulty:'Medium',explanation:'10% of 60 is 6, so the discount is $6.'},
+ {id:'r1',topic:'Ratios',topicColor:'peach',title:'Simplifying ratios',prompt:'Simplify the ratio 12:18. Write it in the form a:b.',answer:'2:3',difficulty:'Easy',explanation:'Divide both parts by their greatest common divisor, 6. The simplified ratio is 2:3.'},
+ {id:'r2',topic:'Ratios',topicColor:'peach',title:'Unit rate',prompt:'A cyclist travels 45 miles in 3 hours. What is the average speed in miles per hour?',answer:'15',difficulty:'Medium',explanation:'Divide distance by time: 45 ÷ 3 = 15 miles per hour.'},
+ {id:'i1',topic:'Integers',topicColor:'blue',title:'Negative numbers',prompt:'Calculate: 8 − 12',answer:'-4',difficulty:'Easy',explanation:'Starting at 8 and moving 12 units left on a number line lands at −4.'},
+ {id:'i2',topic:'Integers',topicColor:'blue',title:'Integer multiplication',prompt:'Calculate: (−6) × (−4)',answer:'24',difficulty:'Medium',explanation:'A negative multiplied by a negative is positive. 6 × 4 = 24.'},
+ {id:'a1',topic:'Intro to algebra',topicColor:'purple',title:'Solve for x',prompt:'Solve: 3x + 5 = 20',answer:'5',difficulty:'Easy',explanation:'Subtract 5 from both sides to get 3x = 15, then divide by 3: x = 5.'},
+ {id:'a2',topic:'Intro to algebra',topicColor:'purple',title:'Distributive property',prompt:'Simplify: 3(x + 4). Give the expanded expression.',answer:'3x+12',difficulty:'Medium',explanation:'Multiply 3 by both terms: 3 × x and 3 × 4, so 3x + 12.'},
+];
